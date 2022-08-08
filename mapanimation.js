@@ -1,4 +1,4 @@
-
+window.onload = run();
 
 mapboxgl.accessToken ='pk.eyJ1Ijoic3ZtcGJ4IiwiYSI6ImNsNXg4aDV4YjByZ3Uzb3BkcnRyempwZWwifQ.90V8tvc-6Ud8fb-QJAb1Pw';
 
@@ -72,5 +72,5 @@ function getMarker(id){
 
 
 
-run();
+
 
