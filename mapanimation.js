@@ -28,7 +28,7 @@ async function run(){
 
 
  	setTimeout(run, 15000);
-}
+};
 
 // Request bus data from MBTA
 async function getBusLocations(){
@@ -36,14 +36,14 @@ async function getBusLocations(){
 	const response = await fetch(url);
 	const json     = await response.json();
 	return json.data;
-}
+};
 
 function addMarker(bus){
 	var icon = getColor(bus);
 	new mapboxgl.Marker(icon)
 	.setLngLat([bus.attributes.longitude, bus.attributes.latitude])
 	.addTo(map);
-}
+};
 
 //markers color based on direction used default markers
 function getColor(bus){
@@ -52,7 +52,7 @@ function getColor(bus){
 		return marker1;
 	}
 	return null;
-}
+};
 
 function moveMarker(bus){
 	var icon = getColor(bus);
@@ -60,7 +60,7 @@ function moveMarker(bus){
 	.setLngLat([bus.attributes.longitude, bus.attributes.latitude])
 	.addTo(map);
 
-}
+};
 
 
 function getMarker(id){
@@ -68,7 +68,7 @@ function getMarker(id){
 		return item.id === id;
 	});
 	return marker;
-}
+};
 
 
 
