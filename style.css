@@ -3,8 +3,15 @@ body {
     margin: 0; padding: 0; 
 }
 
+
+
 #map { 
     position: absolute; top: 0; bottom: 0; width: 100%; 
+}
+
+.map-container {
+  width:80%;
+  height:80%;
 }
 
 .map-overlay{
@@ -30,4 +37,11 @@ body::after{
   display: block;
   height: 70px;
 }
+
+body::before{
+  content:'';
+  display: block;
+  
+}
+
 
